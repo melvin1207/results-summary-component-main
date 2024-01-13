@@ -21,11 +21,13 @@
 }
 
 body{
+    margin: auto;
     font-family: 'Hanken Grotesk', sans-serif;
     max-width: 1440px;
 }
 
 .results_container{
+    margin: 0 auto;
     width: 375px;
     display: grid;
     grid-template-areas: 
@@ -42,8 +44,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 15px 0;
 }
 
 .result_title{
@@ -85,6 +88,38 @@ body{
     text-align: center;
     padding: 30px 40px;
 }
+
+.summary{
+    grid-area: summary;
+    width: 100%;
+    height: 9.8cm;
+    padding: 25px 40px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.summary_title{
+    color: var(--dark-gray-blue);
+    font-size: 18px;
+    align-self: start;
+}
+
+.summary_btn{
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    height: 50px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
 
 
 

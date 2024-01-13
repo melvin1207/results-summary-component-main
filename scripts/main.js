@@ -1,4 +1,5 @@
 const summary = document.querySelector('.summary_points_container')
+const btn = document.querySelector('.summary')
 
 fetch("/data.json")
     .then((response) => response.json())
@@ -21,5 +22,5 @@ function createElement(data){
     const button = document.createElement("button")
     button.classList.add('summary_btn')
     button.textContent = 'Continue'
-    summary.appendChild(button)
+    btn.appendChild(button)
 }
