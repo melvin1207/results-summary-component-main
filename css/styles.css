@@ -9,7 +9,7 @@
     --violet-blue: hsla(256, 72%, 46%, 1);
     --persian-blue: hsla(241, 72%, 46%, 0);
 
-    --wºhite: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
@@ -24,3 +24,68 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
     max-width: 1440px;
 }
+
+.results_container{
+    width: 375px;
+    display: grid;
+    grid-template-areas: 
+    "result"
+    "summary";
+}
+
+.result{
+    grid-area: result;
+    width: 100%;
+    height: 9.8cm;
+    background-image: linear-gradient(var(--light-slate-blue) 0%, var(--light-royal-blue) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.result_title{
+    color: var(--light-lavender);
+    font-size: 18px;
+}
+
+.result_points{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(360deg, var(--persian-blue) 0%, var(--violet-blue) 100%);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_point{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.result_percentage{
+    color: var(--light-lavender);
+    font-weight: bold;
+}
+
+.result_message{
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.result_paragraph{
+    color: var(--light-lavender);
+    text-align: center;
+    padding: 30px 40px;
+}
+
+
+
+
